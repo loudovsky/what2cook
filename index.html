@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Recipe Machine</title>
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/favicon_1.ico" />
+    <script
+      src="https://kit.fontawesome.com/3379e155de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="mon-header">
+      <div class="burger-container">
+        <a id="menu-toggle" class="menu-toggle">
+          <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+          <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+          <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+        </a>
+      </div>
+      <section class="header-wrapper">
+        <div class="first-stage">
+          <form action="">
+            <img src="./img/what-2-cook_logo.png" alt="" />
+            <div class="search_bar hidden-div">
+              <i class="fa-solid fa-plus"></i>
+              <input type="button" id="add_ingredient" />
+              <input
+                type="text"
+                placeholder="add ingredient (tomato, camembert,...)"
+                id="gifToSearch"
+              />
+            </div>
+            <div class="search_button hidden-div">
+              <div id="button">Find recipes</div>
+            </div>
+          </form>
+          <div class="first-stage-bis">
+            <div class="counter hidden-div">
+              <select name="" id="nbr">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <p>recipe(s)</p>
+            </div>
+            <div class="intolerance hidden-div">
+              <select name="" id="intolerance">
+                <option value="">none</option>
+                <option value="dairy">dairy</option>
+                <option value="egg">egg</option>
+                <option value="gluten">gluten</option>
+                <option value="grain">grain</option>
+                <option value="peanut">peanut</option>
+                <option value="seafood">seafood</option>
+                <option value="shellfish">shellfish</option>
+                <option value="sesame">sesame</option>
+                <option value="soy">soy</option>
+                <option value="sulfite">sulfite</option>
+              </select>
+              <p>intolerance</p>
+            </div>
+          </div>
+        </div>
+        <div class="second-stage hidden-div"></div>
+      </section>
+    </header>
+    <h1>The Recipe Machine</h1>
+    <section class="container">
+      <div class="wrapper">
+        <h2>Result</h2>
+        <div class="recipe_result">
+          <div
+            class="image title"
+            id="715495"
+            data-aos="fade-up-left"
+            style="
+              background: url('https://img.spoonacular.com/recipes/715495-312x231.jpg')
+                center/cover;
+            "
+            onerror="this.style.backgroundImage = 'url(../img/pexels-karolina-grabowska-4033639.jpg)'"
+          >
+            <h3 data-aos="fade-left" class="title" id="715495">
+              Turkey Tomato Cheese Pizza
+            </h3>
+            <div class="heart">
+              <i class="fa-regular fa-heart" id="multi"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="saved">
+        <h2>Saved Recipes</h2>
+        <div class="saved_recipes"></div>
+      </div>
+    </section>
+    <footer>
+      <section class="top">
+        <div id="contact"></div>
+        <div id="about"></div>
+      </section>
+      <section class="bottom">
+        <div class="bottom-image">
+          <img src="img/what-2-cook_logo copie.png" alt="bottom-image" />
+        </div>
+        <p>
+          Looking for delicious recipes? Look no further! With “What 2 Cook”,
+          you can easily discover mouthwatering dishes based on the ingredients
+          you have. Whether you’re craving a hearty pasta or a light salad, our
+          intuitive search bar helps you find the perfect recipe.
+        </p>
+      </section>
+      <section class="sub-bottom">
+        <p>©2024 What2Cook</p>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
